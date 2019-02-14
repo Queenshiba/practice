@@ -1,0 +1,42 @@
+
+body {
+    background: lightseagreen;
+ 
+}
+li {
+    list-style-type: none;
+    background: pink;
+    display: flex;
+    
+}
+
+nav {
+    display: flex;
+    background: gray;
+    
+}
+
+ul {
+    background: orange;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+}
+
+a {
+    background: lightblue;
+    padding: 15px 50px 15px 50px;
+    
+
+}
+
+img {
+    padding: 5px 10px 5px 0px;
+    
+    
+}
+
+#aboutus {
+    margin-left: 400px;
+}
