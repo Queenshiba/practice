@@ -11,4 +11,14 @@ function addTodos() {
     createList.appendChild(listTextNode)
     console.log(createList)
     containerList.appendChild(createList)
+
+    let createDeleteBtn = document.createElement('button')
+    createDeleteBtn.textContent = "delete"
+    containerList.appendChild(createDeleteBtn)
+
+    let createEditBtn = document.createElement('button')
+    createEditBtn.textContent = "edit"
+    containerList.appendChild(createEditBtn)
+
+    todoInput.value = ""
 }
