@@ -12,24 +12,29 @@ function addTodos() {
     let createList = document.createElement('li')
 
     createList.appendChild(listTextNode)
-    containerList.appendChild(createList)
+    
+
+let wrapList = document.createElement('div')
+wrapList.setAttribute("id", "wrapList");
+wrapList.appendChild(createList)
 
     let createDeleteBtn = document.createElement('button')
     createDeleteBtn.textContent = "delete" 
-    createDeleteBtn.onclick = function () {
-        arr.forEach(element => {
-            alert(element);
-        });
-        
-    };
-    containerList.appendChild(createDeleteBtn)
+    createDeleteBtn.addEventListener('click', function(e) {
+        containerList.removeChild(wrapList)
+    });
+
+
 
     let createEditBtn = document.createElement('button')
     createEditBtn.textContent = "edit"
-    containerList.appendChild(createEditBtn)
+    // containerList.appendChild(createEditBtn)
 
     todoInput.value = ""
     console.log(containerList)
+    wrapList.appendChild(createDeleteBtn)
+    wrapList.appendChild(createEditBtn)
+    containerList.appendChild(wrapList)
 }
 
 function deleteTodos() {
