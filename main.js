@@ -30,9 +30,10 @@ function addTodos() {
     createEditBtn.textContent = "edit"
     createEditBtn.addEventListener('click', function (e) {
         let createEditInput = document.createElement('input')
-        createEditInput = todoInput.value
-        console.log(todoInput.value)
-        // alert(arr)
+        
+        wrapList.appendChild(createEditInput)
+        createEditInput.value = 'test'
+
     });
 
 
