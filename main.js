@@ -32,10 +32,15 @@ function addTodos() {
         let createEditInput = document.createElement('input')
         createEditInput.setAttribute("id", "editInput");
 
+        let editInputButton = document.createElement('button')
+        editInputButton.textContent = "update"
+        editInputButton.setAttribute("id", "editInputButton");
+
         wrapList.appendChild(createEditInput)
+        wrapList.appendChild(editInputButton)
         createEditInput.value = createList
 
-let editedInputValue = document.getElementById("editInput")
+let editedInputValue = document.getElementById("editInput").value
 console.log(editedInputValue)
         if(createEditInput.value === "abc") {
             return createEditInput.value
